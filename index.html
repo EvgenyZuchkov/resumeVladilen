@@ -7,67 +7,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="<work>,<react>,<JS>">
     <meta name="description" content="My first CV page">
+    <link rel="stylesheet" href="style.css">
     <title>MyCV</title>
 </head>
 <body>
-    <img src="img/AdtqE80RB1U.jpg" alt="avatar" width="150">
-    <h1>Jenya Zuchkov</h1>
-    <p>Я работаю в <strong>автооптторге</strong></p>
-    <p>Я планирую стать <em>програмистом</em></p>
-    <p><h3>Список социальных сетей:</h3></p>
-    <a href="https://www.instagram.com/patoshik1/" target="_blank">Instagram</a>
-    <a href="" target="_blank">Telegram</a>
-    <a href="https://github.com/EvgenyZuchkov" target="_blank">Github</a>
-    <hr>
-    <em>*организация, деятельность которой запрещена на территории РФ</em>
-    <h4>Мое хобби:</h4>
-    <ul>
-        <li>Спорт</li>
-        <li>Путешествия</li>
-        <li>Машины</li>
-    </ul>
-    <h3>Опыт работы:</h3>
-    <table>
-        <thead>
-        <tr>
-            <th>Название работы</th>
-            <th>Должность</th>
-            <th>Период работы</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Райпо</td>
-            <td>Специалист по кадрам</td>
-            <td>2013-2014</td>
-        </tr>
-        <tr>
-            <td>Армтек</td>
-            <td>Менеджер</td>
-            <td>2014-2016</td>
-        </tr>
-        <tr>
-            <td>АОТ</td>
-            <td>Менеджер</td>
-            <td>2022-по н.вр.</td>
-        </tr>
-        </tbody>
-    </table>
-    <div>
-        <h2>Связаться со мной</h2>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-        </div>
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите вам email">
-        </div>
-        <div>
-            <label for="text">Ваше сообщение:</label>
-            <br><textarea id="text" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
-            <br><button>Отправить</button>
+<div class="container">
+
+
+    <div class="card">
+
+    </div>
+    <div class="info">
+        <img src="img/AdtqE80RB1U.jpg" alt="avatar" class="avatar">
+        <div class="info-text">
+            <h1>Jenya Zuchkov</h1>
+            <p>Я работаю в <strong>автооптторге</strong></p>
+            <p>Я планирую стать <em>програмистом</em></p>
         </div>
     </div>
+
+    <p>
+    <h3>Список социальных сетей:</h3></p>
+    <a href="https://www.instagram.com/patoshik1/" target="_blank" class="link">Instagram</a>
+    <a href="" target="_blank" class="link">Telegram</a>
+    <a href="https://github.com/EvgenyZuchkov" target="_blank" class="link">Github</a>
+    <hr>
+    <em>*организация, деятельность которой запрещена на территории РФ</em>
+    <div class="card bg-blue">
+        <h4>Мое хобби:</h4>
+        <ul class="list">
+            <li>Спорт</li>
+            <li>Путешествия</li>
+            <li>Машины</li>
+        </ul>
+    </div>
+    <div class="card bg-purple">
+        <h3>Опыт работы:</h3>
+        <table class="table">
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th>Название работы</th>-->
+<!--                <th>Должность</th>-->
+<!--                <th>Период работы</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+            <tbody>
+            <tr>
+                <td>Райпо</td>
+                <td>Специалист по кадрам</td>
+                <td>2013-2014</td>
+            </tr>
+            <tr>
+                <td>Армтек</td>
+                <td>Менеджер</td>
+                <td>2014-2016</td>
+            </tr>
+            <tr>
+                <td>АОТ</td>
+                <td>Менеджер</td>
+                <td>2022-по н.вр.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" placeholder="Введите вам email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <br><textarea id="text" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            <br>
+            <input class="btn" type="submit" value="Отправить">
+        </div>
+    </div>
+</div>
 </body>
 </html>
